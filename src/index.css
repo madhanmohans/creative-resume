@@ -13,7 +13,7 @@
 
 body {
   font-family: 'Poppins', 'Source Sans Pro', sans-serif;
-  background: url('./assets/wallpaper.jpg') center center;
+  /* background: url('./assets/wallpaper.jpg') center center; */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
