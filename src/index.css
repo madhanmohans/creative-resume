@@ -114,15 +114,9 @@ p, span, div, li {
   letter-spacing: 0.01em;
 }
 
-/* Print styles - Make links clickable and show URLs when printing */
+/* Print styles - Make links clickable for print version */
 @media print {
-  /* Show URLs after links when printing */
-  .print-link::after {
-    content: " (" attr(href) ")";
-    font-size: 0.8em;
-    color: #666;
-    font-weight: normal;
-  }
+  /* Hide URLs when printing - just keep links clickable */
   
   /* Ensure good print layout */
   body {
