@@ -61,7 +61,9 @@ const Resume = () => {
       period: "June 2024 - Present",
       points: [
         "Developed a secure document verification frontend with React for employment offers that handles KYC document uploads (Aadhar, PAN, Bank details), performs real-time validation through Signzy APIs, manages education credentials - streamlining the candidate onboarding process.",
+        "Domain: Recruitment",
         "Developed an automated Google Apps Script system that tracks employee office attendance across multiple India locations, processes leave data, and sends personalized emails to employees about their monthly office visits.",
+        "Domain: Workspace IT",
       ],
     },
     {
@@ -70,6 +72,7 @@ const Resume = () => {
       period: "July 2023 - May 2024",
       points: [
         "IT experience in Analysis, Design, Development, Testing, Production Deployment and Support using ITPA Tool - Resolve Action Express (formerly Ayehu NG) along with ServiceNow integration.",
+        "Domain: Workspace IT",
       ],
     },
     {
@@ -77,8 +80,9 @@ const Resume = () => {
       company: "IoTReady, Bangalore",
       period: "Feb 2023 - June 2023",
       points: [
-        "Built an android native app using java for Wifi and Hotspot connectivity configuration for IoTReady's firmwares",
+        "Built an android native app using java for Wifi and Hotspot connectivity configuration for IoTReady's firmwares.",
         "Built a multi featured app for Big Basket using Kotlin that assists FNV traceability within and between warehouses compatible with IoTReady's Serial, BLE and TC21 firmware devices.",
+      "Domain: FNV Traceability",
       ],
     },
   ];
@@ -290,8 +294,8 @@ const Resume = () => {
                         <div className="mt-4 animate-fadeIn">
                           <ul className="space-y-2 text-sm">
                             {exp.points.map((point, idx) => (
-                              <li key={idx} className="flex items-start gap-2">
-                                <span className="text-resume-blue mt-1">•</span>
+                              <li key={idx} className="flex items-center  gap-2 ">
+                                <span className="text-resume-blue mt-1"> • </span>
                                 <span>{point}</span>
                               </li>
                             ))}
