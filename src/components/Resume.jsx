@@ -167,26 +167,25 @@ const Resume = () => {
 
             {/* Social Links */}
             <div className="space-x-2 flex justify-start">
-              <div className="flex items-center gap-3  text-resume-dark-blue">
-                <FaLinkedin
-                  className="text-xl"
-                  style={{ cursor: "pointer" }}
-                  onClick={() =>
-                    window.open(
-                      "https://www.linkedin.com/in/madhanmohan-s",
-                      "_blank"
-                    )
-                  }
-                />
+              <div className="flex items-center gap-3 text-resume-dark-blue">
+                <a
+                  href="https://www.linkedin.com/in/madhanmohan-s"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block hover:text-blue-600 transition-colors duration-200 print-link"
+                >
+                  <FaLinkedin className="text-xl" />
+                </a>
               </div>
               <div className="flex items-center gap-3 text-resume-dark-blue">
-                <FaGithub
-                  className="text-xl"
-                  style={{ cursor: "pointer" }}
-                  onClick={() =>
-                    window.open("https://github.com/madhanmohan-s", "_blank")
-                  }
-                />
+                <a
+                  href="https://github.com/madhanmohan-s"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block hover:text-blue-600 transition-colors duration-200 print-link"
+                >
+                  <FaGithub className="text-xl" />
+                </a>
               </div>
             </div>
 
@@ -321,12 +320,14 @@ const Resume = () => {
                     </h3>
                     {project.items.map((item, idx) => (
                       <div key={idx} className="flex items-start gap-2">
-                        <span
-                          className="cursor-pointer text-resume-blue hover:text-resume-dark-blue transition-colors duration-200"
-                          onClick={() => window.open(item.url, "_blank")}
+                        <a
+                          href={item.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-resume-blue hover:text-resume-dark-blue transition-colors duration-200 underline print-link"
                         >
                           {item.name}
-                        </span>
+                        </a>
                       </div>
                     ))}
                   </div>

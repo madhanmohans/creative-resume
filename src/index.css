@@ -113,3 +113,50 @@ p, span, div, li {
   word-spacing: 0.1em;
   letter-spacing: 0.01em;
 }
+
+/* Print styles - Make links clickable and show URLs when printing */
+@media print {
+  /* Show URLs after links when printing */
+  .print-link::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+    font-weight: normal;
+  }
+  
+  /* Ensure good print layout */
+  body {
+    background: white !important;
+    padding: 0 !important;
+    font-size: 12px !important;
+  }
+  
+  /* Hide browser frame elements when printing */
+  .bg-gray-200 {
+    display: none !important;
+  }
+  
+  /* Ensure proper spacing for printed version */
+  .max-w-7xl {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  /* Make sure links are visible */
+  a {
+    color: #0066cc !important;
+    text-decoration: underline !important;
+  }
+  
+  /* Optimize page breaks */
+  .bg-white {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Remove shadows and effects for clean print */
+  .shadow-md, .shadow-2xl {
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+  }
+}
