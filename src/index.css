@@ -118,11 +118,12 @@ p, span, div, li {
 @media print {
   /* Hide URLs when printing - just keep links clickable */
   
-  /* Ensure good print layout */
+  /* Ensure good print layout while preserving background */
   body {
-    background: white !important;
     padding: 0 !important;
     font-size: 12px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
   
   /* Hide browser frame elements when printing */
