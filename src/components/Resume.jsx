@@ -169,7 +169,7 @@ const Resume = () => {
             <div className="space-x-2 flex justify-start">
               <div className="flex items-center gap-3 text-resume-dark-blue">
                 <a
-                  href="https://www.linkedin.com/in/madhanmohan-s"
+                  href="https://www.linkedin.com/in/madhanmohans"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block hover:text-blue-600 transition-colors duration-200 print-link"
@@ -179,7 +179,7 @@ const Resume = () => {
               </div>
               <div className="flex items-center gap-3 text-resume-dark-blue">
                 <a
-                  href="https://github.com/madhanmohan-s"
+                  href="https://github.com/madhanmohans"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block hover:text-blue-600 transition-colors duration-200 print-link"
